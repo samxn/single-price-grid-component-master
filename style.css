@@ -1,0 +1,81 @@
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+.content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 380px;
+}
+.big-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px 8px 0px 0px;
+}
+.big-div h2 {
+  color: rgba(74, 190, 189, 255);
+}
+.big-div h3 {
+  color: hsl(71, 73%, 54%);
+  margin: 0;
+}
+.big-div p {
+  color: hsl(218, 22%, 67%);
+}
+.small-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+.color1 {
+  background-color: rgba(43, 179, 177, 255);
+  padding: 30px;
+  border-radius: 0px 0px 0px 8px;
+}
+.color1 h1 span {
+  color: rgba(255, 255, 255, 0.447);
+  font-size: 16px;
+  font-weight: 400;
+}
+.color1 h1 {
+  margin-bottom: 0;
+}
+.color1 button {
+  margin-top: 10px;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  width: 88%;
+  padding: 12px;
+  border: 1px solid hsl(71, 73%, 54%);
+  border-radius: 6px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.color2 {
+  background-color: rgba(74, 190, 189, 255);
+  padding: 30px;
+  border-radius: 0px 0px 8px 0px;
+}
+.color2 p {
+  color: rgba(255, 255, 255, 0.623);
+}
+
+@media only screen and (max-width: 375px) {
+  .content {
+    width: 100%;
+    margin: 0 10px;
+  }
+  .small-div {
+    grid-template-columns: 1fr;
+  }
+  .color1 {
+    border-radius: 0px 0px 0px 0px;
+  }
+  .color2 {
+    border-radius: 0px 0px 8px 8px;
+  }
+}
